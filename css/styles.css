@@ -1,0 +1,18 @@
+@font-face{font-family:"Sequel 45";src:url("../assets/Sequel100Black-45.ttf") format("truetype");font-weight:normal;font-style:normal}
+@font-face{font-family:"Sequel 85";src:url("../assets/Sequel100Black-85.ttf") format("truetype");font-weight:normal;font-style:normal}
+:root{--brand-red:#FF4949;--off-white:#EDEAE7;--black:#000}
+html,body{width:100%;height:100%;overflow-y:hidden;margin:0}
+body{font-family:"Sequel 45","Inter",sans-serif}
+.bg{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.nav{list-style:none;padding:0;margin:0;position:absolute;top:1.5rem;left:50%;transform:translateX(-8%);display:flex;gap:4.4rem;font-family:"Sequel 85","Inter",sans-serif;letter-spacing:.04em}
+.nav li{cursor:pointer;color:var(--brand-red);transition:color .2s;text-align:center;text-transform:uppercase}
+.nav li:hover{color:var(--off-white)}
+#contact{position:absolute;right:2rem;top:1.5rem}
+.logo-small{width:140px;height:auto;position:absolute;top:2rem;left:2rem}
+.logo-big{width:clamp(200px,35vw,900px);height:auto}
+.center-logo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center}
+footer{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);color:var(--brand-red);font-family:"Sequel 85","Inter",sans-serif}
+.about-page .bg{background-color:var(--off-white)}
+.about-container{position:absolute;top:62%;left:50%;transform:translateX(-50%);display:flex;justify-content:space-between;width:78%;color:var(--brand-red);font-size:clamp(14px,1.2vw,20px);line-height:1.4}
+.about-container div{width:50%}
+.contact-block{position:absolute;bottom:2rem;right:2rem;text-align:right;color:var(--brand-red);font-size:.9rem;font-family:"Sequel 45","Inter",sans-serif}
