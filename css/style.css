@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Sequel85';
+    src: url('../assets/Sequel100Black-85.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sequel45';
+    src: url('../assets/Sequel100Black-45.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sequel45', sans-serif;
+    line-height: 1.6;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    font-family: 'Sequel85', sans-serif;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+.logo {
+    color: #F74E45;
+    font-size: 1.2rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #F74E45;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.menu a span {
+    display: block;
+    font-size: 0.7rem;
+}
+
+.menu a:hover {
+    color: #F7E7DE;
+}
+
+.hero {
+    height: 100vh;
+    background: url('../assets/bkgphoto.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-family: 'Sequel85', sans-serif;
+    color: #F74E45;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.talent {
+    padding: 60px 20px;
+}
+
+.talent-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.talent h2 {
+    font-family: 'Sequel85', sans-serif;
+    color: #F74E45;
+    margin-bottom: 10px;
+}
+
+.talent p {
+    white-space: pre-line;
+}
+
+.about {
+    background-color: #F7E7DE;
+    padding: 60px 20px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+}
+
+footer {
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .menu ul {
+        gap: 10px;
+    }
+}
