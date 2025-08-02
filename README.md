@@ -1,2 +1,0 @@
-# trinityone
-TRINITYONE Website
